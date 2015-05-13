@@ -150,10 +150,10 @@ function runScrape(_id) {
                 }
             }
         }
-        if (defaultEmail || defaultPhone) {
+        //if (defaultEmail || defaultPhone) {
             //defaultEmail = defaultEmail.replace('Ask@', '@');
-            lstResult[lstResult.length] = { 'email': defaultEmail, 'phone': defaultPhone };
-        }
+        lstResult[lstResult.length] = { 'email': defaultEmail, 'phone': defaultPhone };
+        //}
         nextScrape();
     }).fail(function () {
         nextScrape();
